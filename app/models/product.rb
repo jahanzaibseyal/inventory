@@ -9,4 +9,5 @@ class Product < ActiveRecord::Base
   scope :normal_quantity,->{where('quantity>=10 AND quantity<50')}
   scope :extra_quantity,->{where('quantity>=50')}
   # scope :sale, -> { joins(:order_details).where("order_detail.quantity <= ?", 7.days.ago).group("users.id")}
+
 end
