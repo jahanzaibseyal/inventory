@@ -1,0 +1,1258 @@
+Script started on و 13:36:19 PKT ت 25 ستمبر 2014
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ script/generate paperclip product photo
+bash: script/generate: No such file or directory
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ script/generate paperclip product photo[1P[1P[1P[1P[1P[1P[1P[1P[1P
+Script started, file is paperclip
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails sg controller main[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kdb:migrate
+Error: Command 'db:migrate' not recognized
+Did you mean: `$ rake db:migrate` ?
+
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ application  Generate the Rails application code
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails db:migrate[1P db:migrate[1P db:migrate[1P db:migratek db:migratee db:migrate
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails generate scaffold_controller Article[K[K[K[K[K[K[KProduct
+[31mCould not find gem 'paperclip (~> 4.2) ruby' in the gems available on this machine.[0m
+[33mRun `bundle install` to install missing gems.[0m
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Resolving dependencies...
+Using rake 10.3.2
+Using i18n 0.6.11
+Using json 1.8.1
+Using minitest 5.4.1
+Using thread_safe 0.3.4
+Using tzinfo 1.2.2
+Using activesupport 4.1.5
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.5
+Using rack 1.5.2
+Using rack-test 0.6.2
+Using actionpack 4.1.5
+Using mime-types 1.25.1
+Using polyglot 0.3.5
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.1.5
+Using activemodel 4.1.5
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.5
+Using bundler 1.7.2
+[32mInstalling climate_control 0.0.3[0m
+[32mInstalling cocaine 0.5.4[0m
+Using coffee-script-source 1.8.0
+Using execjs 2.2.1
+Using coffee-script 2.3.0
+Using thor 0.19.1
+Using railties 4.1.5
+Using coffee-rails 4.0.1
+Using hike 1.2.3
+Using multi_json 1.10.1
+Using jbuilder 2.1.3
+Using jquery-rails 3.1.2
+[32mInstalling paperclip 4.2.0[0m
+Using tilt 1.4.1
+Using sprockets 2.11.0
+Using sprockets-rails 2.1.4
+Using rails 4.1.5
+Using rdoc 4.1.2
+Using sass 3.2.19
+Using sass-rails 4.0.3
+Using sdoc 0.4.1
+Using spring 1.1.3
+Using sqlite3 1.3.9
+Using turbolinks 2.3.0
+Using uglifier 2.5.3
+[32mYour bundle is complete![0m
+[32mUse `bundle show [gemname]` to see where a bundled gem is installed.[0m
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ bundle installrails generate scaffold_controller Product
+[1m[32m      create[0m  app/controllers/products_controller.rb
+[1m[37m      invoke[0m  erb
+[1m[32m      create[0m    app/views/products
+[1m[32m      create[0m    app/views/products/index.html.erb
+[1m[32m      create[0m    app/views/products/edit.html.erb
+[1m[32m      create[0m    app/views/products/show.html.erb
+[1m[32m      create[0m    app/views/products/new.html.erb
+[1m[32m      create[0m    app/views/products/_form.html.erb
+[1m[37m      invoke[0m  test_unit
+[1m[32m      create[0m    test/controllers/products_controller_test.rb
+[1m[37m      invoke[0m  helper
+[1m[32m      create[0m    app/helpers/products_helper.rb
+[1m[37m      invoke[0m    test_unit
+[1m[32m      create[0m      test/helpers/products_helper_test.rb
+[1m[37m      invoke[0m  jbuilder
+[1m[32m      create[0m    app/views/products/index.json.jbuilder
+[1m[32m      create[0m    app/views/products/show.json.jbuilder
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails s
+=> Booting WEBrick
+=> Rails 4.1.5 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
+[2014-09-25 13:45:31] INFO  WEBrick 1.3.1
+[2014-09-25 13:45:31] INFO  ruby 2.0.0 (2014-05-08) [x86_64-linux]
+[2014-09-25 13:45:31] INFO  WEBrick::HTTPServer#start: pid=9651 port=3000
+
+
+Started GET "/main" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MainController#index as HTML
+  Rendered main/_slider.html.erb (3.7ms)
+  Rendered main/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 144ms (Views: 137.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/1.jpg" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/3.jpg" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/assets/4.jpg" for 127.0.0.1 at 2014-09-25 13:45:36 +0500
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-25 13:45:40 +0500
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:45:44 +0500
+
+ActionController::RoutingError (No route matches [GET] "/products"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:46:25 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 27ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.2ms)
+^C[2014-09-25 13:48:00] INFO  going to shutdown ...
+[2014-09-25 13:48:00] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rail s[K[K[Ks c
+No command 'rais' found, did you mean:
+ Command 'rain' from package 'bsdgames' (universe)
+ Command 'rats' from package 'rats' (universe)
+ Command 'rails' from package 'ruby-railties-3.2' (universe)
+ Command 'rails' from package 'ruby-railties-4.0' (universe)
+rais: command not found
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails c
+Loading development environment (Rails 4.1.5)
+irb(main):001:0> Product.all
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT "products".* FROM "products"[0m
+=> #<ActiveRecord::Relation [#<Product id: 1, name: "Mobile", unit_price: 15000.0, quantity: 10, ISBN: "147852", category_id: 1, created_at: "2014-09-23 07:06:49", updated_at: "2014-09-23 07:06:49">]>
+irb(main):002:0> Product.all.remove
+NoMethodError:   [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+undefined method `remove' for #<Product::ActiveRecord_Relation:0x007f24fcba28e0>
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:136:in `method_missing'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:99:in `method_missing'
+	from (irb):2
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:90:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:69:in `console'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/rails_projects/inventory/bin/rails:8:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `block in load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/commands/rails.rb:6:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:180:in `block in serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `fork'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:128:in `block in run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `loop'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application/boot.rb:18:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):003:0> Product.all.remove
+NoMethodError:   [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+undefined method `remove' for #<Product::ActiveRecord_Relation:0x007f24fcc0b138>
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:136:in `method_missing'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:99:in `method_missing'
+	from (irb):3
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:90:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:69:in `console'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/rails_projects/inventory/bin/rails:8:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `block in load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/commands/rails.rb:6:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:180:in `block in serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `fork'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:128:in `block in run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `loop'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application/boot.rb:18:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):004:0> Product.all.remove[K
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+=> #<ActiveRecord::Relation [#<Product id: 1, name: "Mobile", unit_price: 15000.0, quantity: 10, ISBN: "147852", category_id: 1, created_at: "2014-09-23 07:06:49", updated_at: "2014-09-23 07:06:49">]>
+irb(main):005:0> Product.all[K[K[K[K.all
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+=> #<ActiveRecord::Relation [#<Product id: 1, name: "Mobile", unit_price: 15000.0, quantity: 10, ISBN: "147852", category_id: 1, created_at: "2014-09-23 07:06:49", updated_at: "2014-09-23 07:06:49">]>
+irb(main):006:0> Product.all.destory
+NoMethodError:   [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+undefined method `destory' for #<Product::ActiveRecord_Relation:0x007f24fcc719b0>
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:136:in `method_missing'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation/delegation.rb:99:in `method_missing'
+	from (irb):6
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:90:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:69:in `console'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/rails_projects/inventory/bin/rails:8:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `block in load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/commands/rails.rb:6:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:180:in `block in serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `fork'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:128:in `block in run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `loop'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application/boot.rb:18:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):007:0> Product.all.destory[K[K[Kroy
+ArgumentError: wrong number of arguments (0 for 1)
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation.rb:407:in `destroy'
+	from (irb):7
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:90:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:69:in `console'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/rails_projects/inventory/bin/rails:8:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `block in load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/commands/rails.rb:6:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:180:in `block in serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `fork'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:128:in `block in run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `loop'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application/boot.rb:18:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):008:0> Product.all.destroy[K[K[K[K[Klete
+ArgumentError: wrong number of arguments (0 for 1)
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activerecord-4.1.5/lib/active_record/relation.rb:475:in `delete'
+	from (irb):8
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:90:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/console.rb:9:in `start'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:69:in `console'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/railties-4.1.5/lib/rails/commands.rb:17:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `block in require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:247:in `require'
+	from /home/jahanzaib/rails_projects/inventory/bin/rails:8:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `block in load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:232:in `load_dependency'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/activesupport-4.1.5/lib/active_support/dependencies.rb:241:in `load'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/commands/rails.rb:6:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/command_wrapper.rb:38:in `call'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:180:in `block in serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `fork'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:153:in `serve'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:128:in `block in run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `loop'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application.rb:122:in `run'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/spring-1.1.3/lib/spring/application/boot.rb:18:in `<top (required)>'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/site_ruby/2.0.0/rubygems/core_ext/kernel_require.rb:54:in `require'
+	from -e:1:in `<main>'irb(main):009:0> Product.all.deletestroy[C[1Pdestroy[1Pdestroy[1Pdestroy[1Pdestroyadestroyldestroyldestroy.destroy[C[C[C[C[C[C[C_all
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (86.2ms)[0m  commit transaction
+=> [#<Product id: 1, name: "Mobile", unit_price: 15000.0, quantity: 10, ISBN: "147852", category_id: 1, created_at: "2014-09-23 07:06:49", updated_at: "2014-09-23 07:06:49">]
+irb(main):010:0> Product.all.destroy_all[5Pletestroyory[K
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+=> #<ActiveRecord::Relation []>
+irb(main):011:0> ^C
+irb(main):011:0> exit
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails s
+=> Booting WEBrick
+=> Rails 4.1.5 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
+[2014-09-25 13:51:21] INFO  WEBrick 1.3.1
+[2014-09-25 13:51:21] INFO  ruby 2.0.0 (2014-05-08) [x86_64-linux]
+[2014-09-25 13:51:21] INFO  WEBrick::HTTPServer#start: pid=9902 port=3000
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:24 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 47ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:25 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:26 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.7ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:26 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:26 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:27 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-09-25 13:51:52 +0500
+
+ActionController::RoutingError (No route matches [GET] "/posts"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 13:51:59 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:02:30 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:02:32 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:02:32 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 32ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:03:49 +0500
+Processing by ProductsController#show as HTML
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product without an ID):
+  app/controllers/products_controller.rb:67:in `set_product'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+^C[2014-09-25 15:06:18] INFO  going to shutdown ...
+[2014-09-25 15:06:18] INFO  WEBrick::HTTPServer#start done.
+Exiting
+]0;jahanzaib@NX00462: ~/rails_projects/inventoryjahanzaib@NX00462:~/rails_projects/inventory$ rails s
+=> Booting WEBrick
+=> Rails 4.1.5 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Notice: server is listening on all interfaces (0.0.0.0). Consider using 127.0.0.1 (--binding option)
+=> Ctrl-C to shutdown server
+[2014-09-25 15:06:22] INFO  WEBrick 1.3.1
+[2014-09-25 15:06:22] INFO  ruby 2.0.0 (2014-05-08) [x86_64-linux]
+[2014-09-25 15:06:22] INFO  WEBrick::HTTPServer#start: pid=11059 port=3000
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:06:41 +0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.1ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 113ms (Views: 101.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:06:42 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:14:49 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (71.1ms)
+  Rendered products/new.html.erb within layouts/application (73.1ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:14:58 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:14:59 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (0.8ms)
+  Rendered products/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEtLpekp7zk7gu99nSpQ6ScNOloD0jRaV3GxhzA5NLA=", "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered products/_form.html.erb (2.9ms)
+  Rendered products/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:00 +0500
+
+
+Started POST "/products" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEtLpekp7zk7gu99nSpQ6ScNOloD0jRaV3GxhzA5NLA=", "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  Rendered products/_form.html.erb (7.1ms)
+  Rendered products/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:03 +0500
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:15:04 +0500
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:18:37 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+  Rendered products/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 63.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/products" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:18:38 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:18:39 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (32.2ms)
+  Rendered products/new.html.erb within layouts/application (33.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `email' for #<Product:0x007f44b0e28fc8>):
+    19:     </div>
+    20:     <div class="field">
+    21:       <%= f.label :email %><br>
+    22:       <%= f.text_field :email %>
+    23:     </div>
+    24:     <div class="field">
+    25:       <%= f.label :login %><br>
+  app/views/products/_form.html.erb:22:in `block in _app_views_products__form_html_erb__2262713356458751630_69966501100020'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb__2262713356458751630_69966501100020'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__1111084670235121037_69966829276180'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:18:39 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.6ms)
+  Rendered products/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `email' for #<Product:0x007f44d7eb3908>):
+    19:     </div>
+    20:     <div class="field">
+    21:       <%= f.label :email %><br>
+    22:       <%= f.text_field :email %>
+    23:     </div>
+    24:     <div class="field">
+    25:       <%= f.label :login %><br>
+  app/views/products/_form.html.erb:22:in `block in _app_views_products__form_html_erb__2262713356458751630_69966828530720'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb__2262713356458751630_69966828530720'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__1111084670235121037_69966698462920'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.8ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:19:18 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.4ms)
+  Rendered products/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `login' for #<Product:0x007f44c8b9c058>):
+    23:     </div>
+    24:     <div class="field">
+    25:       <%= f.label :login %><br>
+    26:       <%= f.text_field :login %>
+    27:     </div>
+    28:     <div class="actions">
+    29:       <%= f.submit %>
+  app/views/products/_form.html.erb:26:in `block in _app_views_products__form_html_erb__2262713356458751630_69966701081580'
+  app/views/products/_form.html.erb:1:in `_app_views_products__form_html_erb__2262713356458751630_69966701081580'
+  app/views/products/new.html.erb:3:in `_app_views_products_new_html_erb__1111084670235121037_69966698462920'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.1ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.6ms)
+  Rendered products/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:19:43 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (3.0ms)
+  Rendered products/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:24:17 +0500
+
+
+Started POST "/products" for 127.0.0.1 at 2014-09-25 15:24:19 +0500
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QEtLpekp7zk7gu99nSpQ6ScNOloD0jRaV3GxhzA5NLA=", "product"=>{"name"=>"", "unit_price"=>"", "quantity"=>"", "ISBN"=>"", "category_id"=>""}, "commit"=>"Create Product"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/products_controller.rb:27:in `create'
+
+
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/jahanzaib/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (1.8ms)
+  Rendered products/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 60ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:11 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (1.7ms)
+  Rendered products/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (1.6ms)
+  Rendered products/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 86ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/jssor.utils.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/slider.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:12 +0500
+
+
+Started GET "/products/new" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+Processing by ProductsController#new as HTML
+  Rendered products/_form.html.erb (2.5ms)
+  Rendered products/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+
+
+Started GET "/assets/jssor.core.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+
+
+Started GET "/assets/jquery-1.9.1.min.js?body=1" for 127.0.0.1 at 2014-09-25 15:25:13 +0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.
